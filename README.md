@@ -1,5 +1,7 @@
 # Ender5_Corexy_Project
 
-<img align="right" width=175 src="Images/Ender5_Corexy_Prototype.jpg" />
+<img align="Center" width=640 src="Images/Ender5_Corexy_Prototype.jpg" />
 
-Conversion of Ender5 to Corexy with Linear Rails
+__PROTOTYPE!  This is a work in progress :-)__
+
+Conversion of Ender5 to Corexy with Linear Rails.
