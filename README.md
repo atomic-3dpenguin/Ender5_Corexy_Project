@@ -4,7 +4,7 @@
 
 __****PROTOTYPE!  This is a work in progress :-)****__
 
-__Credits__
+# Credits
 
 First off this is a remix of two ideas I found on Thingiverse and I would like to give these individuals credit for their work:
 
@@ -20,4 +20,8 @@ https://www.thingiverse.com/thing:3331662
 
 This design helped me get what I wanted in my X-Axis Linear Rail setup.  I am not a fan of the rail lying flat or on a piece of 2020.  Again a little modification but overall I really like it.
 
-More to come...
+# BOM
+ToDo: Fill in 
+
+# Instructions
+ToDo: Fill in 
