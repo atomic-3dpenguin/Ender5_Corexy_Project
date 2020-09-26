@@ -994,7 +994,7 @@
  */
 #define NOZZEL_TO_PROBE_OFFSET_X  -39.98
 #define NOZZEL_TO_PROBE_OFFSET_Y  -4.65
-#define NOZZEL_TO_PROBE_OFFSET_Z  -2.75
+#define NOZZEL_TO_PROBE_OFFSET_Z  -3.55
 #define NOZZLE_TO_PROBE_OFFSET {NOZZEL_TO_PROBE_OFFSET_X,NOZZEL_TO_PROBE_OFFSET_Y,NOZZEL_TO_PROBE_OFFSET_Z}//{ 175.3, 212.7, -4.5 }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1096,7 +1096,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR true
-#define INVERT_Y_DIR true
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR true
 
 // @section extruder
