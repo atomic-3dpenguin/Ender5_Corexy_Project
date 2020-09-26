@@ -603,7 +603,7 @@
 
 // Enable one of the options below for CoreXY, CoreXZ, or CoreYZ kinematics,
 // either in the usual order or reversed
-#define COREXY
+//#define COREXY
 //#define COREXZ
 //#define COREYZ
 //#define COREYX
@@ -1131,8 +1131,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 170 /* AP: Change to 220 when you fix the homeing issues */
-#define Y_BED_SIZE 190 /* AP: Change to 220 when you fix the homeing issues */
+#define X_BED_SIZE 220 /* AP: Change to 220 when you fix the homeing issues */
+#define Y_BED_SIZE 220 /* AP: Change to 220 when you fix the homeing issues */
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
