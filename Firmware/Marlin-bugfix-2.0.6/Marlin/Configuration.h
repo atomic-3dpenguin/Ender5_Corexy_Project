@@ -817,7 +817,7 @@
  */
 #if DISABLED(CLASSIC_JERK)
 	/*AP: Changed from 0.013 to 0.03 for Ender 5*/
-  #define JUNCTION_DEVIATION_MM 0.013 // (mm) Distance from real junction edge
+  #define JUNCTION_DEVIATION_MM 0.03 // (mm) Distance from real junction edge
   #define JD_HANDLE_SMALL_SEGMENTS    // Use curvature estimation instead of just the junction angle
                                       // for small segments (< 1mm) with large junction angles (> 135°).
 #endif
