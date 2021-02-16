@@ -603,7 +603,7 @@
 
 // Enable one of the options below for CoreXY, CoreXZ, or CoreYZ kinematics,
 // either in the usual order or reversed
-//#define COREXY
+#define COREXY
 //#define COREXZ
 //#define COREYZ
 //#define COREYX
@@ -619,11 +619,11 @@
 // Specify here all the endstop connectors that are connected to any endstop or probe.
 // Almost all printers will be using one per axis. Probes will use one or more of the
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
-//#define USE_XMIN_PLUG
-//#define USE_YMIN_PLUG
+#define USE_XMIN_PLUG
+#define USE_YMIN_PLUG
 #define USE_ZMIN_PLUG
-#define USE_XMAX_PLUG
-#define USE_YMAX_PLUG
+//#define USE_XMAX_PLUG
+//#define USE_YMAX_PLUG
 //#define USE_ZMAX_PLUG
 
 // Enable pullup for all endstops to prevent a floating state
@@ -743,7 +743,7 @@
 //TODO: These need to be adjusted after calibration or edited with your units
 //      calibration settings
 //TODO: AP: These might need to be adjusted!
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.00, 80.00, 795.08, 97.89 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.8, 79.7, 798.5, 116.5 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -992,9 +992,9 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZEL_TO_PROBE_OFFSET_X  -39.98
-#define NOZZEL_TO_PROBE_OFFSET_Y  -4.65
-#define NOZZEL_TO_PROBE_OFFSET_Z  -3.55
+#define NOZZEL_TO_PROBE_OFFSET_X  39.98
+#define NOZZEL_TO_PROBE_OFFSET_Y  4.65
+#define NOZZEL_TO_PROBE_OFFSET_Z  -0.613
 #define NOZZLE_TO_PROBE_OFFSET {NOZZEL_TO_PROBE_OFFSET_X,NOZZEL_TO_PROBE_OFFSET_Y,NOZZEL_TO_PROBE_OFFSET_Z}//{ 175.3, 212.7, -4.5 }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1096,7 +1096,7 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR true
-#define INVERT_Y_DIR false
+#define INVERT_Y_DIR true
 #define INVERT_Z_DIR true
 
 // @section extruder
@@ -1124,8 +1124,8 @@
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
-#define X_HOME_DIR 1
-#define Y_HOME_DIR 1
+#define X_HOME_DIR -1
+#define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
 
 // @section machine
@@ -1133,6 +1133,7 @@
 // The size of the print bed
 #define X_BED_SIZE 220 /* AP: Change to 220 when you fix the homeing issues */
 #define Y_BED_SIZE 220 /* AP: Change to 220 when you fix the homeing issues */
+
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1258,7 +1259,7 @@
  * Turn on with the command 'M111 S32'.
  * NOTE: Requires a lot of PROGMEM!
  */
-//#define DEBUG_LEVELING_FEATURE
+// #define DEBUG_LEVELING_FEATURE
 
 #if ANY(MESH_BED_LEVELING, AUTO_BED_LEVELING_BILINEAR, AUTO_BED_LEVELING_UBL)
   // Gradually reduce leveling correction until a set height is reached,
